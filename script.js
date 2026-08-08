@@ -106,22 +106,16 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  /* ---------- Reveal suave ao rolar (cards, painéis) ---------- */
-  const revealTargets = document.querySelectorAll('.card, .demo-panel, .steps');
+  /* ---------- Reveal ao rolar: qualquer elemento .reveal ---------- */
+  const revealTargets = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('is-visible');
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
-  revealTargets.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(16px)';
-    io.observe(el);
-  });
+  revealTargets.forEach(el => io.observe(el));
 });

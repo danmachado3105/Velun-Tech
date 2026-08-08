@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">VelunTech</title>
+  <desc id="desc">Marca circular minimalista branca que representa conexão digital.</desc>
+  <circle cx="256" cy="256" r="218" stroke="white" stroke-width="12"/>
+  <g stroke="white" stroke-width="18" stroke-linecap="round">
+    <path d="M256 138V190"/>
+    <path d="M358 197L313 223"/>
+    <path d="M358 315L313 289"/>
+    <path d="M256 374V322"/>
+    <path d="M154 315L199 289"/>
+    <path d="M154 197L199 223"/>
+  </g>
+  <g fill="white">
+    <circle cx="256" cy="126" r="18"/>
+    <circle cx="369" cy="190" r="18"/>
+    <circle cx="369" cy="322" r="18"/>
+    <circle cx="256" cy="386" r="18"/>
+    <circle cx="143" cy="322" r="18"/>
+    <circle cx="143" cy="190" r="18"/>
+  </g>
+  <circle cx="256" cy="256" r="42" fill="white"/>
+</svg>
