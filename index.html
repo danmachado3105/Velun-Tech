@@ -6,8 +6,12 @@
 <title>Velun Tech — Sites que fazem seu negócio parecer sério</title>
 <meta name="description" content="A Velun Tech cria sites profissionais para pequenos negócios. Rápido, direto, sem enrolação.">
 
-<!-- FAVICON: substitua pelo seu quando tiver pronto -->
-<link rel="icon" type="image/png" href="favicon.png">
+<!-- FAVICON -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,16 +25,17 @@
 <header class="header" id="header">
   <div class="header-inner">
     <a href="#top" class="logo">
-      <!-- LOGO: troque este span por <img src="logo.svg"> quando tiver a logo pronta -->
-      <span class="logo-mark" aria-hidden="true"></span>
+      <img src="logo.svg" class="logo-mark" alt="Velun Tech" aria-hidden="true">
       <span class="logo-text">Velun Tech</span>
     </a>
 
     <nav class="nav" id="nav">
-      <a href="#abordagem">Abordagem</a>
-      <a href="#demonstracao">Demonstração</a>
-      <a href="#processo">Processo</a>
-      <a href="#contato">Contato</a>
+      <a href="#abordagem">ABORDAGEM</a>
+      <a href="#demonstracao">DEMONSTRAÇÃO</a>
+      <a href="#processo">PROCESSO</a>
+      <a href="#investimento">INVESTIMENTO</a>
+      <a href="#sobre">SOBRE</a>
+      <a href="#contato">CONTATO</a>
     </nav>
 
     <a href="#contato" class="btn btn-primary btn-small">
@@ -49,14 +54,13 @@
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">SITES PARA PEQUENOS NEGÓCIOS</p>
         <h1 class="hero-title">
-          Seu negócio já é sério. <em>Seu site também deveria ser.</em>
+          Sites profissionais que fortalecem a presença do seu negócio.
         </h1>
         <p class="hero-sub">
-          A Velun Tech cria sites profissionais pra quem vende de verdade — comércio,
-          serviço, prestador autônomo. Sem pacote genérico, sem enrolação, sem
-          sumiço depois que você paga.
+          A Velun Tech desenvolve sites institucionais sob medida para pequenos
+          negócios que querem transmitir credibilidade e conquistar a confiança
+          do cliente logo no primeiro acesso.
         </p>
         <div class="hero-actions">
           <a href="#contato" class="btn btn-primary">Falar com a Velun Tech <span class="dot"></span></a>
@@ -76,52 +80,92 @@
             <line x1="300" y1="300" x2="135" y2="195"></line>
           </g>
 
+          <!-- pontos ao longo das linhas -->
+          <g class="hub-dots">
+            <circle cx="300" cy="156" r="3.5"></circle>
+            <circle cx="432" cy="216" r="3.5"></circle>
+            <circle cx="432" cy="384" r="3.5"></circle>
+            <circle cx="300" cy="444" r="3.5"></circle>
+            <circle cx="168" cy="384" r="3.5"></circle>
+            <circle cx="168" cy="216" r="3.5"></circle>
+          </g>
+
           <!-- anel orbital -->
           <circle cx="300" cy="300" r="185" class="hub-orbit"></circle>
           <circle cx="300" cy="300" r="185" class="hub-orbit hub-orbit-alt"></circle>
 
           <!-- nó central -->
           <g class="hub-center">
-            <circle cx="300" cy="300" r="58" class="hub-center-ring"></circle>
-            <circle cx="300" cy="300" r="40" class="hub-center-fill"></circle>
-            <text x="300" y="296" class="hub-center-label">SEU</text>
-            <text x="300" y="314" class="hub-center-label">NEGÓCIO</text>
+            <circle cx="300" cy="300" r="72" class="hub-center-ring"></circle>
+            <circle cx="300" cy="300" r="54" class="hub-center-fill"></circle>
+            <text x="300" y="295" class="hub-center-label">SEU</text>
+            <text x="300" y="313" class="hub-center-label">NEGÓCIO</text>
           </g>
 
           <!-- nós satélite -->
           <g class="hub-node" transform="translate(300,120)">
             <circle r="44" class="node-ring"></circle>
-            <path class="node-icon" d="M-14,-6 L14,-6 L14,10 L-14,10 Z M-14,-6 L0,-16 L14,-6" fill="none"/>
+            <g class="node-icon" fill="none">
+              <rect x="-13" y="-10" width="26" height="18" rx="3"></rect>
+              <line x1="-13" y1="-3" x2="13" y2="-3"></line>
+              <line x1="0" y1="8" x2="0" y2="12"></line>
+              <line x1="-6" y1="12" x2="6" y2="12"></line>
+            </g>
             <text y="66" class="node-label">SITE</text>
           </g>
 
           <g class="hub-node" transform="translate(465,195)">
             <circle r="44" class="node-ring"></circle>
-            <path class="node-icon" d="M0,-14 A14,14 0 1 1 -0.1,-14 Z" fill="none"/>
+            <g class="node-icon" fill="none">
+              <circle r="13"></circle>
+              <ellipse rx="5.5" ry="13"></ellipse>
+              <line x1="-13" y1="0" x2="13" y2="0"></line>
+            </g>
             <text y="66" class="node-label">DOMÍNIO</text>
           </g>
 
           <g class="hub-node" transform="translate(465,405)">
             <circle r="44" class="node-ring"></circle>
-            <rect class="node-icon" x="-13" y="-13" width="26" height="26" rx="6" fill="none"/>
+            <g class="node-icon" fill="none">
+              <line x1="-9" y1="9" x2="7" y2="-7"></line>
+              <path d="M7,-7 L11,-11 L14,-8 L10,-4 Z"></path>
+              <path d="M-9,9 L-12,13 L-8,11 Z"></path>
+            </g>
             <text y="66" class="node-label">DESIGN</text>
           </g>
 
           <g class="hub-node" transform="translate(300,480)">
             <circle r="44" class="node-ring"></circle>
-            <path class="node-icon" d="M-14,10 L-14,-2 A14,12 0 0 1 14,-2 L14,10 Z" fill="none"/>
+            <g class="node-icon" fill="none">
+              <path d="M-12,3 A12,11 0 0 1 12,3"></path>
+              <rect x="-14" y="2" width="6" height="10" rx="3"></rect>
+              <rect x="8" y="2" width="6" height="10" rx="3"></rect>
+              <path d="M14,12 v2 a5,5 0 0 1 -5,5 h-2"></path>
+            </g>
             <text y="66" class="node-label">SUPORTE</text>
           </g>
 
           <g class="hub-node" transform="translate(135,405)">
             <circle r="44" class="node-ring"></circle>
-            <path class="node-icon" d="M-14,-10 L14,-10 L14,6 L-4,6 L-8,14 L-8,6 L-14,6 Z" fill="none"/>
+            <g class="node-icon">
+              <path d="M-12,-9 h24 a4,4 0 0 1 4,4 v8 a4,4 0 0 1 -4,4 h-14 l-7,6 v-6 h-3 a4,4 0 0 1 -4,-4 v-8 a4,4 0 0 1 4,-4 Z" fill="none"></path>
+              <circle cx="-6" cy="-1" r="1.4" fill="currentColor" stroke="none"></circle>
+              <circle cx="0" cy="-1" r="1.4" fill="currentColor" stroke="none"></circle>
+              <circle cx="6" cy="-1" r="1.4" fill="currentColor" stroke="none"></circle>
+            </g>
             <text y="66" class="node-label">WHATSAPP</text>
           </g>
 
           <g class="hub-node" transform="translate(135,195)">
             <circle r="44" class="node-ring"></circle>
-            <path class="node-icon" d="M-14,0 L14,0 M0,-14 L0,14 M-10,-10 L10,10 M-10,10 L10,-10" fill="none" stroke-width="1.4"/>
+            <g class="node-icon" fill="none">
+              <line x1="-9" y1="-7" x2="9" y2="-7"></line>
+              <line x1="-9" y1="-7" x2="0" y2="10"></line>
+              <line x1="9" y1="-7" x2="0" y2="10"></line>
+              <circle cx="-9" cy="-7" r="3.2" fill="currentColor" stroke="none"></circle>
+              <circle cx="9" cy="-7" r="3.2" fill="currentColor" stroke="none"></circle>
+              <circle cx="0" cy="10" r="3.2" fill="currentColor" stroke="none"></circle>
+            </g>
             <text y="66" class="node-label">REDES</text>
           </g>
         </svg>
@@ -191,57 +235,155 @@
   <!-- ====== PROCESSO ====== -->
   <section class="processo" id="processo">
     <div class="section-inner">
-      <p class="eyebrow reveal">COMO FUNCIONA NA PRÁTICA</p>
-      <h2 class="section-title reveal">Da conversa ao site <em>no ar</em>.</h2>
+      <p class="eyebrow reveal processo-eyebrow">COMO FUNCIONA NA PRÁTICA</p>
+      <h2 class="section-title reveal processo-title">Da conversa ao site no ar.</h2>
 
       <div class="steps reveal">
         <div class="steps-nav">
-          <button class="step-tab is-active" data-step="1"><span>01</span>Conversa</button>
-          <button class="step-tab" data-step="2"><span>02</span>Proposta</button>
-          <button class="step-tab" data-step="3"><span>03</span>Design</button>
-          <button class="step-tab" data-step="4"><span>04</span>Desenvolvimento</button>
-          <button class="step-tab" data-step="5"><span>05</span>Lançamento</button>
+          <button class="step-tab is-active" data-step="1" data-title="Conversa" data-desc="Você me conta sobre o negócio: o que vende, pra quem, e o que te incomoda em não ter site hoje.">
+            <span class="step-num">01</span>
+            <span class="step-title">Conversa</span>
+            <span class="step-tags">Objetivo · Público · Prazo</span>
+          </button>
+          <button class="step-tab" data-step="2" data-title="Proposta" data-desc="Eu volto com escopo e valor fechado. Sem letra miúda — você sabe exatamente o que vai receber.">
+            <span class="step-num">02</span>
+            <span class="step-title">Proposta</span>
+            <span class="step-tags">Escopo · Valor fechado</span>
+          </button>
+          <button class="step-tab" data-step="3" data-title="Design" data-desc="Monto o layout pensando no seu cliente, não no que é mais fácil pra mim. Você aprova antes de eu programar.">
+            <span class="step-num">03</span>
+            <span class="step-title">Design</span>
+            <span class="step-tags">Layout · Aprovação</span>
+          </button>
+          <button class="step-tab" data-step="4" data-title="Desenvolvimento" data-desc="Construo o site de verdade — rápido, responsivo, funcionando em qualquer celular.">
+            <span class="step-num">04</span>
+            <span class="step-title">Desenvolvimento</span>
+            <span class="step-tags">Código · Responsivo</span>
+          </button>
+          <button class="step-tab" data-step="5" data-title="Lançamento" data-desc="Site no ar, domínio configurado, e eu te explico como pedir qualquer ajuste depois.">
+            <span class="step-num">05</span>
+            <span class="step-title">Lançamento</span>
+            <span class="step-tags">Domínio · Site no ar</span>
+          </button>
         </div>
 
         <div class="steps-bar"><span class="steps-bar-fill" id="stepsBarFill"></span></div>
 
-        <div class="step-panels">
-          <div class="step-panel is-active" data-panel="1">
-            <h3>Conversa</h3>
-            <p>Você me conta sobre o negócio: o que vende, pra quem, e o que te incomoda em não ter site hoje.</p>
-          </div>
-          <div class="step-panel" data-panel="2">
-            <h3>Proposta</h3>
-            <p>Eu volto com escopo e valor fechado. Sem letra miúda — você sabe exatamente o que vai receber.</p>
-          </div>
-          <div class="step-panel" data-panel="3">
-            <h3>Design</h3>
-            <p>Monto o layout pensando no seu cliente, não no que é mais fácil pra mim. Você aprova antes de eu programar.</p>
-          </div>
-          <div class="step-panel" data-panel="4">
-            <h3>Desenvolvimento</h3>
-            <p>Construo o site de verdade — rápido, responsivo, funcionando em qualquer celular.</p>
-          </div>
-          <div class="step-panel" data-panel="5">
-            <h3>Lançamento</h3>
-            <p>Site no ar, domínio configurado, e eu te explico como pedir qualquer ajuste depois.</p>
-          </div>
+        <div class="step-detail" id="stepDetail">
+          <h3 id="stepDetailTitle">Conversa</h3>
+          <p id="stepDetailText">Você me conta sobre o negócio: o que vende, pra quem, e o que te incomoda em não ter site hoje.</p>
         </div>
 
-        <div class="steps-marks">
-          <div class="marks-col">
-            <p class="marks-title">O QUE VOCÊ RECEBE</p>
-            <ul>
-              <li>Site responsivo, rápido, no ar</li>
-              <li>Domínio próprio configurado</li>
-            </ul>
+        <div class="steps-panel">
+          <div class="steps-marks">
+            <div class="marks-col">
+              <p class="marks-title">O QUE VOCÊ RECEBE</p>
+              <ul>
+                <li>Site responsivo, rápido, no ar</li>
+                <li>Domínio próprio configurado</li>
+              </ul>
+            </div>
+            <div class="marks-col">
+              <p class="marks-title">O QUE VOCÊ GANHA</p>
+              <ul>
+                <li>Presença que passa confiança</li>
+                <li>Menos "me manda o link" perdido no chat</li>
+              </ul>
+            </div>
           </div>
-          <div class="marks-col">
-            <p class="marks-title">O QUE VOCÊ GANHA</p>
-            <ul>
-              <li>Presença que passa confiança</li>
-              <li>Menos "me manda o link" perdido no chat</li>
-            </ul>
+
+          <div class="steps-footer">
+            <span class="steps-footer-label">PROCESSO E RESULTADO SE ENCONTRAM →</span>
+            <span class="steps-footer-pill"><span class="pill-dot"></span>Site no ar, cliente satisfeito</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== INVESTIMENTO ====== -->
+  <section class="investimento" id="investimento">
+    <div class="section-inner">
+      <p class="eyebrow reveal">INVESTIMENTO</p>
+      <h2 class="section-title reveal">Preço claro, sem letra miúda.</h2>
+      <p class="section-sub reveal">Faixas de referência. O valor exato depende do que o seu negócio precisa — a gente fecha isso na conversa.</p>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <p class="price-name">Site Simples</p>
+          <p class="price-value">R$ 300 <span>– R$ 800</span></p>
+          <p class="price-desc">Pra quem precisa de uma presença online rápida e direta.</p>
+          <ul class="price-features">
+            <li>Página única (landing page)</li>
+            <li>Até 3 seções personalizadas</li>
+            <li>Otimizado pra celular</li>
+            <li>Entrega em poucos dias</li>
+          </ul>
+          <a href="#contato" class="btn btn-ghost price-btn">Falar sobre esse plano</a>
+        </div>
+
+        <div class="price-card price-card-featured reveal">
+          <span class="price-tag">MAIS ESCOLHIDO</span>
+          <p class="price-name">Site Completo</p>
+          <p class="price-value">R$ 800 <span>– R$ 1.500</span></p>
+          <p class="price-desc">Pra negócio que quer contar sua história com mais profundidade.</p>
+          <ul class="price-features">
+            <li>Múltiplas páginas</li>
+            <li>Seções sob medida pro seu negócio</li>
+            <li>Formulário de contato</li>
+            <li>Suporte pós-entrega</li>
+          </ul>
+          <a href="#contato" class="btn btn-primary price-btn">Falar sobre esse plano <span class="dot"></span></a>
+        </div>
+
+        <div class="price-card reveal">
+          <p class="price-name">Sob Medida</p>
+          <p class="price-value">Sob consulta</p>
+          <p class="price-desc">Pra projeto com necessidade específica — e-commerce, integrações, funcionalidades extras.</p>
+          <ul class="price-features">
+            <li>Escopo levantado com você</li>
+            <li>Funcionalidades personalizadas</li>
+            <li>Proposta fechada antes de começar</li>
+          </ul>
+          <a href="#contato" class="btn btn-ghost price-btn">Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SOBRE / QUEM ESTÁ POR TRÁS ====== -->
+  <section class="sobre" id="sobre">
+    <div class="section-inner">
+      <p class="eyebrow reveal">QUEM ESTÁ POR TRÁS</p>
+      <h2 class="section-title reveal">Conheça quem constrói o seu site.</h2>
+
+      <div class="sobre-card reveal">
+        <div class="sobre-photo-wrap">
+          <img src="danilo.jpg" alt="Foto de Danilo Machado" class="sobre-photo">
+        </div>
+
+        <div class="sobre-text">
+          <h3 class="sobre-name">Danilo Machado</h3>
+          <p class="sobre-role">Fundador da Velun Tech</p>
+          <p class="sobre-bio">
+            Estudante de Engenharia de Software e responsável por cada site que sai daqui.
+            Não terceirizo pra equipe nenhuma — sou eu que converso com você, desenho,
+            desenvolvo e continuo por perto depois da entrega.
+          </p>
+
+          <div class="sobre-links">
+            <a href="https://github.com/danmachado3105" target="_blank" rel="noopener" class="sobre-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/danilomachado3105" target="_blank" rel="noopener" class="sobre-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:danilomachado1227@gmail.com" class="sobre-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1 7.8-6.1H4.2Zm15.8 1.6-7.4 5.8a1 1 0 0 1-1.2 0L3.99 7.6V18h16V7.6Z"/></svg>
+              danilomachado1227@gmail.com
+            </a>
           </div>
         </div>
       </div>
@@ -267,10 +409,10 @@
 <footer class="footer">
   <div class="section-inner footer-inner">
     <div class="logo">
-      <span class="logo-mark" aria-hidden="true"></span>
+      <img src="logo.svg" class="logo-mark" alt="Velun Tech" aria-hidden="true">
       <span class="logo-text">Velun Tech</span>
     </div>
-    <p class="footer-note">Sites para pequenos negócios. Feito por Danilo Machado.</p>
+    <p class="footer-note">© 2026 Velun Tech · Sites para pequenos negócios. Feito por Danilo Machado.</p>
   </div>
 </footer>
 

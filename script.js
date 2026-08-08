@@ -79,21 +79,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Processo: abas de etapas ---------- */
   const stepTabs = document.querySelectorAll('.step-tab');
-  const stepPanels = document.querySelectorAll('.step-panel');
   const stepsBarFill = document.getElementById('stepsBarFill');
+  const stepDetailTitle = document.getElementById('stepDetailTitle');
+  const stepDetailText = document.getElementById('stepDetailText');
+  const stepDetail = document.getElementById('stepDetail');
 
-  stepTabs.forEach(tab => {
+  stepTabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
-      const step = tab.dataset.step;
-
       stepTabs.forEach(t => t.classList.remove('is-active'));
       tab.classList.add('is-active');
 
-      stepPanels.forEach(p => p.classList.remove('is-active'));
-      document.querySelector(`.step-panel[data-panel="${step}"]`).classList.add('is-active');
-
       if (stepsBarFill) {
-        stepsBarFill.style.width = (step / stepTabs.length) * 100 + '%';
+        const pct = 100 / stepTabs.length;
+        stepsBarFill.style.width = pct + '%';
+        stepsBarFill.style.left = (pct * index) + '%';
+      }
+
+      if (stepDetailTitle && stepDetailText) {
+        stepDetailTitle.textContent = tab.dataset.title;
+        stepDetailText.textContent = tab.dataset.desc;
+        // reinicia a animação de entrada
+        stepDetail.querySelectorAll('h3, p').forEach(el => {
+          el.style.animation = 'none';
+          void el.offsetWidth;
+          el.style.animation = '';
+        });
       }
     });
   });
