@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VelunTech — Sites que fazem seu negócio parecer sério</title>
+<meta name="description" content="A VelunTech cria sites profissionais para pequenos negócios. Rápido, direto, sem enrolação.">
+
+<!-- FAVICON: substitua pelo seu quando tiver pronto -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <!-- LOGO: troque este span por <img src="logo.svg"> quando tiver a logo pronta -->
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text">VelunTech</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#abordagem">Abordagem</a>
+      <a href="#demonstracao">Demonstração</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="#contato" class="btn btn-primary btn-small">
+      Falar com a VelunTech <span class="dot"></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">SITES PARA PEQUENOS NEGÓCIOS</p>
+        <h1 class="hero-title">
+          Seu negócio já é sério. <em>Seu site também deveria ser.</em>
+        </h1>
+        <p class="hero-sub">
+          A VelunTech cria sites profissionais pra quem vende de verdade — comércio,
+          serviço, prestador autônomo. Sem pacote genérico, sem enrolação, sem
+          sumiço depois que você paga.
+        </p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Falar com a VelunTech <span class="dot"></span></a>
+          <a href="#demonstracao" class="btn btn-ghost">Ver como funciona</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="hub" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+          <!-- linhas -->
+          <g class="hub-lines" stroke-width="1">
+            <line x1="300" y1="300" x2="300" y2="120"></line>
+            <line x1="300" y1="300" x2="465" y2="195"></line>
+            <line x1="300" y1="300" x2="465" y2="405"></line>
+            <line x1="300" y1="300" x2="300" y2="480"></line>
+            <line x1="300" y1="300" x2="135" y2="405"></line>
+            <line x1="300" y1="300" x2="135" y2="195"></line>
+          </g>
+
+          <!-- nó central -->
+          <g class="hub-center">
+            <circle cx="300" cy="300" r="58" class="hub-center-ring"></circle>
+            <circle cx="300" cy="300" r="40" class="hub-center-fill"></circle>
+            <text x="300" y="296" class="hub-center-label">SEU</text>
+            <text x="300" y="314" class="hub-center-label">NEGÓCIO</text>
+          </g>
+
+          <!-- nós satélite -->
+          <g class="hub-node" transform="translate(300,120)">
+            <circle r="44" class="node-ring"></circle>
+            <path class="node-icon" d="M-14,-6 L14,-6 L14,10 L-14,10 Z M-14,-6 L0,-16 L14,-6" fill="none"/>
+            <text y="66" class="node-label">SITE</text>
+          </g>
+
+          <g class="hub-node" transform="translate(465,195)">
+            <circle r="44" class="node-ring"></circle>
+            <path class="node-icon" d="M0,-14 A14,14 0 1 1 -0.1,-14 Z" fill="none"/>
+            <text y="66" class="node-label">DOMÍNIO</text>
+          </g>
+
+          <g class="hub-node" transform="translate(465,405)">
+            <circle r="44" class="node-ring"></circle>
+            <rect class="node-icon" x="-13" y="-13" width="26" height="26" rx="6" fill="none"/>
+            <text y="66" class="node-label">DESIGN</text>
+          </g>
+
+          <g class="hub-node" transform="translate(300,480)">
+            <circle r="44" class="node-ring"></circle>
+            <path class="node-icon" d="M-14,10 L-14,-2 A14,12 0 0 1 14,-2 L14,10 Z" fill="none"/>
+            <text y="66" class="node-label">SUPORTE</text>
+          </g>
+
+          <g class="hub-node" transform="translate(135,405)">
+            <circle r="44" class="node-ring"></circle>
+            <path class="node-icon" d="M-14,-10 L14,-10 L14,6 L-4,6 L-8,14 L-8,6 L-14,6 Z" fill="none"/>
+            <text y="66" class="node-label">WHATSAPP</text>
+          </g>
+
+          <g class="hub-node" transform="translate(135,195)">
+            <circle r="44" class="node-ring"></circle>
+            <path class="node-icon" d="M-14,0 L14,0 M0,-14 L0,14 M-10,-10 L10,10 M-10,10 L10,-10" fill="none" stroke-width="1.4"/>
+            <text y="66" class="node-label">REDES</text>
+          </g>
+        </svg>
+        <p class="hub-caption"><span class="hub-count">06</span> FRENTES QUE UM SITE RESOLVE DE UMA VEZ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABORDAGEM ====== -->
+  <section class="abordagem" id="abordagem">
+    <div class="section-inner">
+      <p class="eyebrow">POR QUE VELUNTECH</p>
+      <h2 class="section-title">Feito por alguém que vai te responder.</h2>
+
+      <div class="cards-grid">
+        <article class="card">
+          <span class="card-num">01</span>
+          <h3>Direto ao ponto</h3>
+          <p>Sem termo técnico pra te confundir. Eu explico o que você tá comprando e por quê.</p>
+        </article>
+        <article class="card">
+          <span class="card-num">02</span>
+          <h3>Prazo real</h3>
+          <p>Combinamos uma data e eu entrego nela. Se atrasar, você sabe antes de perguntar.</p>
+        </article>
+        <article class="card">
+          <span class="card-num">03</span>
+          <h3>Preço justo</h3>
+          <p>Sem pacote inflado com coisa que você não vai usar. Você paga pelo que precisa.</p>
+        </article>
+        <article class="card">
+          <span class="card-num">04</span>
+          <h3>Suporte de verdade</h3>
+          <p>Site no ar não é o fim. Ajuste, dúvida ou atualização, eu continuo por perto.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DEMONSTRAÇÃO (antes / depois) ====== -->
+  <section class="demo" id="demonstracao">
+    <div class="section-inner">
+      <p class="eyebrow">NA PRÁTICA</p>
+      <h2 class="section-title">O que muda quando seu negócio tem um site.</h2>
+      <p class="section-sub">Arraste o controle e veja a diferença entre depender só de rede social e ter um site próprio.</p>
+
+      <div class="demo-panel">
+        <div class="demo-toggle" role="tablist">
+          <button class="demo-toggle-btn is-active" data-state="antes" role="tab" aria-selected="true">Sem site</button>
+          <button class="demo-toggle-btn" data-state="depois" role="tab" aria-selected="false">Com VelunTech</button>
+        </div>
+
+        <div class="demo-window">
+          <div class="demo-window-bar">
+            <span class="demo-dot"></span><span class="demo-dot"></span><span class="demo-dot"></span>
+            <span class="demo-url" id="demoUrl">instagram.com/seunegocio</span>
+          </div>
+
+          <div class="demo-content" id="demoContent">
+            <!-- preenchido via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROCESSO ====== -->
+  <section class="processo" id="processo">
+    <div class="section-inner">
+      <p class="eyebrow">COMO FUNCIONA NA PRÁTICA</p>
+      <h2 class="section-title">Da conversa ao site <em>no ar</em>.</h2>
+
+      <div class="steps">
+        <div class="steps-nav">
+          <button class="step-tab is-active" data-step="1"><span>01</span>Conversa</button>
+          <button class="step-tab" data-step="2"><span>02</span>Proposta</button>
+          <button class="step-tab" data-step="3"><span>03</span>Design</button>
+          <button class="step-tab" data-step="4"><span>04</span>Desenvolvimento</button>
+          <button class="step-tab" data-step="5"><span>05</span>Lançamento</button>
+        </div>
+
+        <div class="steps-bar"><span class="steps-bar-fill" id="stepsBarFill"></span></div>
+
+        <div class="step-panels">
+          <div class="step-panel is-active" data-panel="1">
+            <h3>Conversa</h3>
+            <p>Você me conta sobre o negócio: o que vende, pra quem, e o que te incomoda em não ter site hoje.</p>
+          </div>
+          <div class="step-panel" data-panel="2">
+            <h3>Proposta</h3>
+            <p>Eu volto com escopo e valor fechado. Sem letra miúda — você sabe exatamente o que vai receber.</p>
+          </div>
+          <div class="step-panel" data-panel="3">
+            <h3>Design</h3>
+            <p>Monto o layout pensando no seu cliente, não no que é mais fácil pra mim. Você aprova antes de eu programar.</p>
+          </div>
+          <div class="step-panel" data-panel="4">
+            <h3>Desenvolvimento</h3>
+            <p>Construo o site de verdade — rápido, responsivo, funcionando em qualquer celular.</p>
+          </div>
+          <div class="step-panel" data-panel="5">
+            <h3>Lançamento</h3>
+            <p>Site no ar, domínio configurado, e eu te explico como pedir qualquer ajuste depois.</p>
+          </div>
+        </div>
+
+        <div class="steps-marks">
+          <div class="marks-col">
+            <p class="marks-title">O QUE VOCÊ RECEBE</p>
+            <ul>
+              <li>Site responsivo, rápido, no ar</li>
+              <li>Domínio próprio configurado</li>
+            </ul>
+          </div>
+          <div class="marks-col">
+            <p class="marks-title">O QUE VOCÊ GANHA</p>
+            <ul>
+              <li>Presença que passa confiança</li>
+              <li>Menos "me manda o link" perdido no chat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA FINAL ====== -->
+  <section class="cta-final" id="contato">
+    <div class="section-inner cta-final-inner">
+      <p class="eyebrow">PRÓXIMO PASSO</p>
+      <h2 class="section-title">Vamos colocar seu negócio no ar?</h2>
+      <p class="section-sub">Me chama e conta o que você vende. Eu te digo, sem enrolação, o que faz sentido pro seu caso.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary">Chamar no WhatsApp <span class="dot"></span></a>
+        <a href="#" class="btn btn-ghost">Ver portfólio</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <div class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text">VelunTech</span>
+    </div>
+    <p class="footer-note">Sites para pequenos negócios. Feito por Danilo Machado.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
