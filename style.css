@@ -1250,6 +1250,62 @@ img { max-width: 100%; display: block; }
 .cta-final .hero-actions { justify-content: center; }
 
 /* ============================================
+   Velun ZAP (cross-promo)
+   ============================================ */
+.cross-promo {
+  border-top: 1px solid var(--border);
+  background: var(--bg-raised);
+  padding: 28px 0;
+}
+
+.cross-promo-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cross-promo-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cross-promo-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.cross-promo-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.cross-promo-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.cross-promo-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+  .cross-promo-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cross-promo-content { flex-direction: column; text-align: center; }
+  .cross-promo-btn { width: 100%; justify-content: center; }
+}
+
+/* ============================================
    Footer
    ============================================ */
 .footer {
