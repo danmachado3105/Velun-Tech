@@ -24,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     antes: {
       url: 'instagram.com/seunegocio',
       html: `
+        <div class="mock-bio">
+          <span class="mock-avatar">SN</span>
+          <span class="mock-bio-line"></span>
+          <div class="mock-linklist">
+            <span class="mock-linkitem">🔗 linktr.ee/seunegocio</span>
+            <span class="mock-linkitem is-faded">📋 Cardápio (atualizado em março)</span>
+            <span class="mock-linkitem is-faded">🎉 Promoção de aniversário</span>
+            <span class="mock-linkitem is-crossed">📵 WhatsApp — número antigo</span>
+          </div>
+        </div>
         <h4>"Manda o link do Insta"</h4>
         <p>Cliente novo tem que rolar o feed pra achar preço, endereço ou horário.
         Se você trocar de rede social, o link antigo já era.</p>
@@ -37,6 +47,36 @@ document.addEventListener('DOMContentLoaded', () => {
     depois: {
       url: 'seunegocio.com.br',
       html: `
+        <div class="mock-site">
+          <div class="mock-nav">
+            <span class="mock-logo"></span>
+            <span class="mock-navlinks"><span></span><span></span></span>
+            <span class="mock-navbtn"></span>
+          </div>
+          <div class="mock-hero">
+            <span class="mock-hero-img"></span>
+            <span class="mock-line mock-line-lg"></span>
+            <span class="mock-line mock-line-md"></span>
+            <span class="mock-cta"></span>
+          </div>
+          <div class="mock-cards">
+            <span class="mock-card">
+              <span class="mock-card-top"></span>
+              <span class="mock-card-line"></span>
+              <span class="mock-card-line mock-card-line-sm"></span>
+            </span>
+            <span class="mock-card">
+              <span class="mock-card-top"></span>
+              <span class="mock-card-line"></span>
+              <span class="mock-card-line mock-card-line-sm"></span>
+            </span>
+            <span class="mock-card">
+              <span class="mock-card-top"></span>
+              <span class="mock-card-line"></span>
+              <span class="mock-card-line mock-card-line-sm"></span>
+            </span>
+          </div>
+        </div>
         <h4>Um endereço só seu, sempre no ar</h4>
         <p>O cliente entra, entende o que você vende e já sabe como te chamar —
         sem depender de rede social ou de achar o post certo.</p>
